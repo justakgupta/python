@@ -1,8 +1,14 @@
-def rotate(arr, length, rotations):
+#takes name of array, and requried number of rotations
+def rotate(arr, rotations):
 	rotatedarray = arr[0-rotations:][::-1] + arr[:0-rotations]
-	print rotatedarray
+	print("rotated array is : ")
+	print(rotatedarray)
 	pass
 
-arr = [4,5,6,7,2,1]
-print arr
-rotate(arr, len(arr), 2)
+numberofelements = int(input("enter the number of elements in the array: "))
+elements = input("enter " + str(numberofelements) + " CSV values: ")
+arr = elements.split(',')
+rot = int(input("how many rotations? : "))
+print("default array is : ")
+print(arr)
+rotate(arr, int(rot % numberofelements))
