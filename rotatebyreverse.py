@@ -1,3 +1,6 @@
+#breaks the input array into two parts. first part is from 0 to rotatestepsize -1
+#and second part is from rotatestepsize until the end of array. Finally rotate the combination
+#arr : array input ; rotatestep: the number of rotations
 def rotatebyreversing(arr, rotatestep):
 	return (arr[:rotationstepsize-1][::-1] + arr[rotationstepsize:][::-1])[::-1]
 	pass
